@@ -24,7 +24,9 @@ public class CursoEntity implements Serializable{
 	@OneToMany(mappedBy="curso")
 	private List<TurmaEntity> turmas = new ArrayList<>();
 	
-	public CursoEntity() {}
+	public CursoEntity() {
+		super();
+	}
 
 	public CursoEntity(Integer id, String nome, String nivel, String turno) {
 		this.id = id;
